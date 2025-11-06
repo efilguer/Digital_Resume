@@ -1,0 +1,6 @@
+Hi {{ name }}!
+
+Here's the rest of your data that didn't show up in your bike computer:
+
+   * Your median speed was {{ median_speed }} - this is the constant speed that you were going 
+    without the sudden sprints and bursts of energy or lack thereof.
