@@ -1,4 +1,9 @@
-compatibility_date = "2025-11-06"
-main = "src/index.ts"
-name = "my-static-site"
-pages_build_output_dir = "./dist"
+name = "my-worker"
+type = "javascript"
+account_id = "eb79e787fe003a3ce9b222bd8287dfee"
+workers_dev = true
+main = "worker.js"
+
+[site]
+bucket = "./dist"
+entry-point = "workers-site"
