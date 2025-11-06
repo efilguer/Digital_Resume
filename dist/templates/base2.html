@@ -7,7 +7,7 @@
     {% block styles %}
     {{super()}}
     <link rel="stylesheet"
-        href="{{url_for('.static', filename='css/main.css')}}">
+        href="{{url_for('.dist', filename='static/css/main.css')}}">
     {% endblock %}
 </head>
 
@@ -23,9 +23,9 @@
         <input type="text" id="pref_name" name="pref_name"><br>
     </form>
 
-    <!--<script src="{{ url_for('.static', filename='js/main.js') }}"></script>-->
+    <!--<script src="{{ url_for('.dist', filename='js/main.js') }}"></script>-->
     {% block scripts %}
-    <script src="{{url_for('.static', filename='js/myscripts.js')}}"></script>
+    <script src="{{url_for('.dist', filename='static/js/myscripts.js')}}"></script>
     {{super()}}
     {% endblock %}
 </body>
