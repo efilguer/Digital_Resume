@@ -1,2 +1,4 @@
+compatibility_date = "2025-11-06"
+main = "src/index.ts"
 name = "my-static-site"
 pages_build_output_dir = "./dist"
