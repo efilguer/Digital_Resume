@@ -1,7 +1,0 @@
-name = "my-worker"
-account_id = "eb79e787fe003a3ce9b222bd8287dfee"
-workers_dev = true
-main = "worker.js"
-
-[site]
-bucket = "./dist"
