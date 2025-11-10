@@ -1,6 +1,5 @@
 import qrcode
 import qrcode.constants
-from qrcode.image.styledpil import StyledPilImage
 
 def generate(data):
 
@@ -15,12 +14,12 @@ def generate(data):
     qr.make(fit = True)
 
     #image from QR
-    image = qr.make_image(image_factory=StyledPilImage, embeded_image_path="/home/locutus/Pictures/Screenshots/dogpaw.png")
+    image = qr.make_image()
 
     #save image
-    image.save('/home/locutus/Documents/Tech_Projects/ProjectIAmDog/images/test_generated0113.png')
+    image.save('/path/here/name.png')
     print('generating ...')
     print('qr code generated and image saved')
 
 
-    
+generate('working_website_url_here')
