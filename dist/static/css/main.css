@@ -3426,6 +3426,36 @@ input, select, textarea {
 			font-size: 3.25em;
 		}
 
+		#banner .content{
+				display:flex;
+				align-items:flex-start;
+			}
+
+		#banner .content h3{
+			flex: 0 0 30%;
+			margin: 0;
+		}
+
+		#banner .content p{
+			flex: 0 0 70%;
+			margin: 0;
+			padding-left: 2rem;
+		}
+
+		/* Banner mobile */
+		@media(max-width:980px){
+			#banner .content{
+				flex-direction: column;
+			}
+
+			#banner .content h3,
+			#banner .content p{
+				flex: 0 0 auto;
+				width: 100%;
+				padding-left: 0;
+			}
+		}
+
 		#banner > .inner {
 			-moz-transition: opacity 1.5s ease, -moz-transform 0.5s ease-out, -moz-filter 0.5s ease, -webkit-filter 0.5s ease;
 			-webkit-transition: opacity 1.5s ease, -webkit-transform 0.5s ease-out, -webkit-filter 0.5s ease, -webkit-filter 0.5s ease;
@@ -3435,6 +3465,8 @@ input, select, textarea {
 			position: relative;
 			z-index: 2;
 		}
+
+			
 
 			#banner > .inner .image {
 				display: none;
